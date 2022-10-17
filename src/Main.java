@@ -17,7 +17,7 @@ public class Main {
         int round4 = round3 * 2;
         int round5 = round4 * 2;
 
-        
 
+        in.close();
     }
 }
