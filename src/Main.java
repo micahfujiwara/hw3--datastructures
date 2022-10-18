@@ -3,8 +3,10 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 
-/*
- * java docs here
+/**
+ * Driver class to collect algorithm runtime
+ * @author Micah Fujiwara
+ * @version 10/24/22
  */
 
 public class Main {
@@ -12,7 +14,6 @@ public class Main {
         Scanner in = new Scanner(System.in);
         ArrayList<Integer> alist = new ArrayList<Integer>();
         LinkedList<Integer> llist = new LinkedList<Integer>();
-        Algorithms obj = new Algorithms();
 
         System.out.println("Enter the Initial list size: ");
         int listSize = in.nextInt();
@@ -22,13 +23,13 @@ public class Main {
         int round4 = round3 * 2;
         int round5 = round4 * 2;
 
-
+ 
         //arraylist addInOrder
-        obj.addInOrder(alist, round1);
-        obj.addInOrder(alist, round2);
-        obj.addInOrder(alist, round3);
-        obj.addInOrder(alist, round4);
-        obj.addInOrder(alist, round5);
+        Algorithms.addInOrder(alist, round1);
+        Algorithms.addInOrder(alist, round2);
+        Algorithms.addInOrder(alist, round3);
+        Algorithms.addInOrder(alist, round4);
+        Algorithms.addInOrder(alist, round5);
 
         
         /*
@@ -46,7 +47,7 @@ public class Main {
         obj.addInRandomOrder(alist, round4);
         obj.addInRandomOrder(alist, round5);
 
-*/ 
+
 
         //linkedlist addInOrder
         obj.addInOrder(llist, round1);
@@ -55,7 +56,7 @@ public class Main {
         obj.addInOrder(llist, round4);
         obj.addInOrder(llist, round5);
 
-    /* 
+    
         //linkedlist addInReverseOrder
         obj.addInReverseOrder(llist, round1);
         obj.addInReverseOrder(llist, round2);
