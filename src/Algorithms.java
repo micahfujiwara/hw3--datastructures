@@ -21,10 +21,12 @@ public class Algorithms {
             int index = BinarySearch.search(numbers, i);
             numbers.add(index, i);
         }
+        System.out.println(numbers);
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
         System.out.println("for list size of " + n + ", the duration of adding in order is " + duration + " msec");
+        numbers.clear();
     }
 
     /**
@@ -38,10 +40,12 @@ public class Algorithms {
             int index = BinarySearch.search(numbers, i);
             numbers.add(i);
         }
+        System.out.println(numbers);
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
         System.out.println("for list size of " + n + ", the duration of adding in reverse order is " + duration + " msec");
+        numbers.clear();
     }
 
     /**
@@ -58,9 +62,11 @@ public class Algorithms {
             int index = BinarySearch.search(numbers, numToAdd);
             numbers.add(index, numToAdd);
         }
+        System.out.println(numbers);
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
         System.out.println("for list size of " + n + ", the duration of adding in random order is " + duration + " msec");
+        numbers.clear();
     }
 }
